@@ -8,7 +8,15 @@ if ("serviceWorker" in navigator) {
     })
 }
 
+
 const btnNotification = document.querySelector(".notification");
 btnNotification.addEventListener("click", () => {
-    btnNotification.innerHTML = btnNotification.innerHTML == "Notify Me" ? "Silent Mode" : "Notify Me"
+    Notification.requestPermission().then((perm) => {
+        if (perm  === "granted") {
+            new Notification("We're coming soon", {
+                body: "Our crypto trading website will be live very soon!",
+                icon: "../images/maskable_icon_x192.png"
+            })
+        }
+    })
 })
