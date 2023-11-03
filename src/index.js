@@ -7,3 +7,8 @@ if ("serviceWorker" in navigator) {
         console.log(error)
     })
 }
+
+const btnNotification = document.querySelector(".notification");
+btnNotification.addEventListener("click", () => {
+    btnNotification.innerHTML = btnNotification.innerHTML == "Notify Me" ? "Silent Mode" : "Notify Me"
+})

@@ -25,3 +25,18 @@ body {
 .logo {
     width: 20%;
 }
+
+.notification {
+    padding: 0.6rem;
+    border: 0;
+    border-radius: 0.3rem;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.notification:hover {
+    background-color: #cccccc;
+    color: #e2e2e2;
+}

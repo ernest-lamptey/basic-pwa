@@ -9,3 +9,5 @@ This basic PWA (Progressive Web Application) showcases a coming soon page for a 
 
 ## Notes
 This project was a learning exercise to familiarize myself with the basics of PWAs.
+
+## 
